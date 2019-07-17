@@ -28,7 +28,7 @@ let scene, camera, renderer,
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_rt }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_lf }));
    
-        for (let i = 0; i < materialArray.length; i++)
+        for (let i = 0; i < 6; i++)
            materialArray[i].side = THREE.BackSide;
         let skyboxGeo = new THREE.BoxGeometry( 10000, 10000, 10000),
             skybox = new THREE.Mesh( skyboxGeo, materialArray );
